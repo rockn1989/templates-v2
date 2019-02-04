@@ -1,0 +1,115 @@
+/* @mixin background-retina($filename, $fileformat) {
+	background-image: url("../img/${filename}$1x.${fileformat}");
+
+	$media: $retina-dpi, $retina-ppx {
+		background-image: url("../img/${filename}$2x.${fileformat}");
+	}
+}
+ */
+
+/*______ Main Fonts ______*/
+
+/*
+@font-face {
+	font-family: "MuseoSansCyrl";
+	src: url("../fonts/MuseoSans300/MuseoSansCyrl.eot");
+	src: url("../fonts/MuseoSans30/MuseoSansCyrl.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MuseoSans300/MuseoSansCyrl.woff") format("woff"),
+	url("../fonts/MuseoSans300/MuseoSansCyrl.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "MuseoSansCyrl";
+	src: url("../fonts/MuseoSans500/MuseoSansCyrl.eot");
+	src: url("../fonts/MuseoSans500/MuseoSansCyrl.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MuseoSans500/MuseoSansCyrl.woff") format("woff"),
+	url("../fonts/MuseoSans500/MuseoSansCyrl.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 500;
+}
+*/
+
+/*______ Elements ______*/
+
+body,
+table {
+  font-family: "MuseoSansCyrl";
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+svg {
+  -webkit-transition: fill .3s linear;
+  -o-transition: fill .3s linear;
+  -moz-transition: fill .3s linear;
+  transition: fill .3s linear;
+}
+
+html.uk-touch body *.uk-invisible {
+  display: block !important;
+  opacity: 1 !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  animation: none !important;
+  visibility: visible !important;
+}
+
+.uk-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: red;
+  border-right: 100px solid;
+}
+
+/*______ PAGE HEADER ______*/
+
+/* PAGE CONTENT */
+
+/*______ PAGE FOOTER ______*/
+
+/*______ SLIDERS ______*/
+
+/*______ MODALS WINDOWS ______*/
+
+/*______ FORMS ______*/
+
+@media (min-width: 0px) {
+  html.uk-touch body [class*=uk-animation-] {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .uk-container {
+    padding: 0 15px;
+  }
+}
